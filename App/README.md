@@ -1,4 +1,4 @@
-# push_up_counter
+#Islah.AI
 
 A new Flutter project.
 
