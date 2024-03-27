@@ -46,7 +46,7 @@ class _ProcessingScreenState extends State<ProcessingScreen> {
     });
 
     // Send the video file to your Flask server for processing
-    final url = Uri.parse('http://192.168.1.108:5000//upload');
+    final url = Uri.parse('http://192.168.1.107:5000//upload');
     final request = http.MultipartRequest('POST', url);
     request.files
         .add(await http.MultipartFile.fromPath('video', widget.media.path));
@@ -106,7 +106,7 @@ class _ProcessingScreenState extends State<ProcessingScreen> {
                         MaterialPageRoute(
                           builder: (_) => const ProcessedVideoScreen(
                             processedVideoUrl:
-                                'http://192.168.1.108:5000//process',
+                                'http://192.168.1.107:5000//process',
                           ),
                         ),
                       );
